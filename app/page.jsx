@@ -24,7 +24,7 @@ const Home = () => {
 
             {/* CV-btn and socials */}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
-              <a href="/resume.pdf" download>
+              <a href="/assets/Resume_hra.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
