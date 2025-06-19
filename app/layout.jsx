@@ -21,20 +21,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Favicon (webp) */}
-        <link rel="icon" href="/favicon.webp" type="image/webp" />
-
-        {/* Optional fallback for better browser support */}
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* Optional: Add .webp or .png favicon fallback */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta name="description" content="Software Developer Portfolio" />
         <title>Harshit Raj Arya</title>
       </head>
       <body className={jetbrainsMono.variable}>
         <Header />
-        <StairTransition /> 
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
