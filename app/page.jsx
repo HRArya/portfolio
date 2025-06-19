@@ -16,10 +16,10 @@ const Home = () => {
           <div className="order-2 text-center xl:text-left xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="mb-6 h1">
-              Hello I'm <br /> <span className="text-accent">Harshit Raj Arya</span>
+              Hello I&apos;m <br /> <span className="text-accent">Harshit Raj Arya</span>
             </h1>
             <p className="max-w-[560px] mb-9 text-white/90">
-              I'm a passionate computer science graduate focused on building clean, user-friendly digital experiences with a growing tech skillset.
+              I&apos;m a passionate computer science graduate focused on building clean, user-friendly digital experiences with a growing tech skillset.
             </p>
 
             {/* CV-btn and socials */}

@@ -47,9 +47,9 @@ const Contact = () => {
           <div className="w-full xl:w-[50%] order-2 xl:order-none">
             <form className="flex flex-col gap-8 p-6 rounded-xl">
               
-              <h3 className="text-3xl font-semibold text-accent">Let's connect</h3>
+              <h3 className="text-3xl font-semibold text-accent">Let&apos;s connect</h3>
               <p className="text-base text-white/60">
-                Open to opportunities and collaborations—let’s get in touch!
+                Open to opportunities and collaborations—let&apos;s get in touch!
               </p>
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
