@@ -68,7 +68,7 @@ const Contact = () => {
     // Reset form after 5 seconds
     setTimeout(() => {
       setStatus("");
-    }, 5000);
+    }, 2000);
   };
 
   return (
@@ -134,23 +134,22 @@ const Contact = () => {
               />
 
               {/* Submit Area */}
-<Button
-  type="submit"
-  size="md"
-  className={`max-w-40 flex justify-center items-center h-12 relative ${
-    status === "sent" ? "bg-accent hover:bg-accent" : ""
-  }`}
-  disabled={status === "sending" || status === "sent"}
->
-  {status === "sending" ? (
-    <FaSpinner className="text-xl text-white animate-spin" />
-  ) : status === "sent" ? (
-    <FaCheck className="text-2xl text-white animate-scale-up" />
-  ) : (
-    "Send Message"
-  )}
-</Button>
-
+            <Button
+              type="submit"
+              size="md"
+              className={`max-w-40 flex justify-center transition items-center h-12 relative ${
+                status === "sent" ? "bg-accent hover:bg-accent" : ""
+              }`}
+              disabled={status === "sending" || status === "sent"}
+            >
+              {status === "sending" ? (
+                <FaSpinner className="text-xl text-white animate-spin" />
+              ) : status === "sent" ? (
+                <FaCheck className="text-2xl text-white animate-scale-up" />
+              ) : (
+                "Send Message"
+              )}
+            </Button>
             </form>
           </div>
 
