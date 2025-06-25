@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Harshit Raj Arya – Portfolio Website
 
-## Getting Started
+A **modern**, **visually engaging** developer portfolio website built with **Next.js 14**, **Tailwind CSS**, **Framer Motion**, and **shadcn/ui**.  
+It showcases personal information, projects, a contact form, smooth animations, and a mobile‑first responsive design.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🧑‍💻 Developer portfolio with dynamic sections  
+- ⚙️ Built using **Next.js App Router**  
+- 🎨 Fully responsive design with **Tailwind CSS**  
+- 🌈 Smooth page transitions via **Framer Motion**  
+- 🧩 Modular UI components using **shadcn/ui**  
+- 📬 Contact form with animated loading/success states (API route)  
+- 🖼️ Animated project showcase slider (**Swiper.js**)  
+- 🧠 Custom font integration (JetBrains Mono)  
+- 📱 Dark‑mode friendly & mobile‑optimized  
+
+---
+
+## 🧱 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **Next.js 14** | React framework & App Router |
+| **Tailwind CSS** | Utility‑first responsive styling |
+| **Framer Motion** | Page & component animations |
+| **shadcn/ui** | Accessible UI primitives |
+| **React Icons / Lucide Icons** | Iconography |
+| **Swiper.js** | Project carousel |
+
+---
+
+## 📁 Project Structure
+
+```text
+portfolio-nextjs/
+├── app/
+│   ├── components/
+│   │   ├──api/contact
+│   │   │  └── route.js     # API route for contact form
+│   │   ├── contact
+│   │   │   └── page.jsx
+│   │   ├── project
+│   │   │   └── page.jsx
+│   │   └── resume
+│   │       └── page.jsx
+│   ├── layout.jsx          # Layout (fonts, transitions, header)
+│   ├── page.jsx            # Home page
+│   └── golbals.css         # Global css
+│
+├── components/
+│   ├── Header.jsx
+│   ├── MoblieNav.jsx
+│   ├── PageTransition.jsx
+│   ├── StairTransition.jsx
+│   ├── Nav.jsx
+│   ├── Photo.jsx
+│   ├── Social.jsx
+│   ├── Stair.jsx
+│   ├── WorkSliderBtns.jsx
+│   └── ui/                 # Inputs, buttons, textarea, tooltip
+│
+├── public/
+│   └── assets/             # Images, logos, favicon        
+│
+├── .elintrc.json
+│
+├── package.json   
+│
+├── README.md
+└── tailwind.config.js      # Tailwind base styles
+```
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
 
 ```bash
+git clone https://github.com/HRA/portfolio-nextjs.git
+cd portfolio-nextjs
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌐 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Deploy on Vercel in one command:
 
-## Learn More
+```bash
 
-To learn more about Next.js, take a look at the following resources:
+npx vercel
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+Or follow the manual deployment guide.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🧪 Development Notes
 
-## Deploy on Vercel
+- Fonts imported via next/font/google (JetBrains Mono)
+- Metadata & favicon configured in layout.jsx
+- Contact form handled by /api/contact POST route
+- Button states (sending, sent) managed with React useState
+- Responsive layout follows Tailwind’s mobile‑first approach
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Field   | Details                         |
+|---------|----------------------------------|
+| **Author** | Harshit Raj Arya               |
+| **Email**  | [harshitrajarya@gmail.com](mailto:harshitrajarya@gmail.com) |
+| **GitHub** | [@HRA](https://github.com/HRA) |
+
+## 📄 License
+
+Released under the **MIT License** — feel free to **fork**, **improve**, and **use** it for personal or commercial projects.
+
+> _“Show, don’t tell” — this portfolio speaks your skills._ 🚀
+
