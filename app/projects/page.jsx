@@ -22,6 +22,40 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "backend",
+    title: "Bookstore REST API",
+    description:
+      "Designed and developed a RESTful Bookstore API that enables complete management of books, authors, and inventory through well-structured endpoints. The API supports CRUD operations, follows clean architecture principles, and is built to be scalable, maintainable, and easily integrable with frontend applications or third-party services.",
+    stack: [
+      { name: "Java" },
+      { name: "Spring Boot" },
+      { name: "REST APIs" },
+      { name: "Hibernate" },
+      { name: "MySQL" }
+    ],
+    image: "/assets/work/bookstore-api.png",
+    live: "",
+    github: "https://github.com/HRArya/SimplerTechnologies"
+  },
+  {
+    num: "02",
+    category: "AI",
+    title: "PPE Compliance System",
+    description:
+      "Built an AI-powered industrial safety monitoring system that automatically verifies personal protective equipment (PPE) compliance in real time. The platform uses computer vision to detect helmets, safety vests, gloves, and boots from live video feeds, enabling proactive safety enforcement, instant alerts, and improved workplace compliance in high-risk industrial environments.",
+    stack: [
+      { name: "Python" },
+      { name: "YOLOv8" },
+      { name: "OpenCV" },
+      { name: "Flask" },
+      { name: "MySQL" }
+    ],
+    image: "/assets/work/ppe-compliance-system_1.png",
+    live: "",
+    github: "https://github.com/HRArya/PPE-Compliance-System"
+  },
+  {
+    num: "03",
     category: "fullstack",
     title: "project 1",
     description:
@@ -31,28 +65,22 @@ const projects = [
     live: "https://svitconnect.netlify.app/",
     github: "https://github.com/HRArya/SVITConnect",
   },
-  // {
-  //   num: "02",
-  //   category: "frontend",
-  //   title: "project 2",
-  //   description:
-  //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sit nobis expedita.",
-  //   stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "JavaScript" }],
-  //   image: "/assets/work/thumb2.png",
-  //   live: "https://example.com/project2",
-  //   github: "https://github.com/user/project2",
-  // },
-  // {
-  //   num: "03",
-  //   category: "fullstack",
-  //   title: "project 3",
-  //   description:
-  //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sit nobis expedita.",
-  //   stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "JavaScript" }],
-  //   image: "/assets/work/thumb3.png",
-  //   live: "https://example.com/project3",
-  //   github: "https://github.com/user/project3",
-  // },
+{
+  num: "04",
+  category: "core-java",
+  title: "Survey System",
+  description:
+    "Built a simple Java-based survey application as an early academic project to understand core programming concepts. The system allows users to create surveys, record responses, and review collected data, helping establish a strong foundation in object-oriented programming, control flow, and basic data handling.",
+  stack: [
+    { name: "Java" },
+    { name: "OOP" },
+    { name: "Collections" },
+    { name: "File Handling" }
+  ],
+  image: "/assets/work/survey-system.png",
+  live: "",
+  github: "https://github.com/HRArya/Survey_System"
+}
 ];
 
 const Project = () => {
@@ -70,7 +98,7 @@ const Project = () => {
         opacity: 1, 
         transition: { delay:2.4, duration: 0.4, ease: "easeIn"}
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-16 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-0 xl:px-0 xl:-mt-8"
 
     >
       <div className="container mx-auto">

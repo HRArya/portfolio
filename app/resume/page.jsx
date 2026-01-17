@@ -9,13 +9,14 @@ import {
   FaPython, 
   FaJava, 
   FaNodeJs,
+  FaAws
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiDocker, SiSpringboot } from "react-icons/si";
 
 const about ={
   title: 'About me',
-  description: "I’m passionate about building clean, responsive digital experiences and have a solid foundation in programming languages and web technologies.",
+  description: "Java-focused backend developer building clean, maintainable applications with strong OOP foundations and hands-on exposure to AWS Cloud services and deployment workflows.",
   info: [
     { fieldName: "Name", fieldValue: "Harshit Raj Arya" },
     { fieldName: "Phone", fieldValue: "(+91) 7005298498" },
@@ -27,28 +28,32 @@ const about ={
 };
 
 const experience = {
-  icon: '/assets/resume/badge.svg',
   title: "My experience",
-  description: "Trained in Java development, passionate about coding, quick learner, and equipped with foundational software skills from Tap Academy.",
+  description: "Java backend developer focused on building clean, scalable applications, with solid OOP foundations and practical exposure to AWS Cloud and deployment workflows.",
   items: [
+    {
+      company: "AWS re/Start – Generation India",
+      position: "Cloud Computing Trainee",
+      duration: "Nov 2025 - Present",
+    },
+    {
+      company: "Elevate Labs",
+      position: "Java Development Intern",
+      duration: "Sep 2025 - Nov 2025"
+    },
     {
       company: "Tap Academy",
       position: "Software Development Trainee",
-      duration: "Feb 2025 - Present" 
-    },
+      duration: "Feb 2025 - Sep 2025"
+    }
   ],
 };
 
 const education = {
   icon: '/assets/resume/cap.svg',
   title: "My education",
-  description: "B.E. in CSE (2025) from SVIT with software development training in Java and frameworks at Tap Academy.",
+  description: "B.E. in Computer Science and Engineering (CGPA: 8.3)",
   items: [
-    {
-      institution: "Tap Academy",
-      degree: "Software Development Course",
-      duration: "Feb 2025 - Jun 2025" 
-    },
     {
       institution: "Sai Vidya Institute of Technology",
       degree: "B.E. in Computer Science and Engineering",
@@ -59,15 +64,18 @@ const education = {
 
 const skills = {
   title: "My skills",
-  description: "Strong foundation in software development with practical experience, problem-solving ability, and familiarity with modern tools and development environments.",
+  description: "Backend-focused skill set centered on Java, RESTful services, and data-driven applications, with frontend, cloud, and containerization support.",
   skillList: [
+    { icon: <FaJava/>, name: "java" },
+    { icon: <FaPython/>, name: "python" },
+    { icon: <SiMysql/>, name: "mysql" },
+    { icon: <SiSpringboot />, name: "spring boot" },
     { icon: <FaHtml5/>, name: "html 5" },
     { icon: <FaCss3/>, name: "css 3" },
     { icon: <FaJs/>, name: "javascript" },
     { icon: <FaReact/>, name: "react.js" },
-    { icon: <FaJava/>, name: "java" },
-    { icon: <FaPython/>, name: "python" },
-    { icon: <SiMysql/>, name: "mysql" },
+    { icon: <FaAws />, name: "aws" },
+    { icon: <SiDocker />, name: "docker" },
     { icon: <SiTailwindcss/>, name: "tailwind.css" },
   ],
 };
@@ -100,7 +108,7 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">
                   {experience.title}
                 </h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[750px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[300px]">
@@ -124,7 +132,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                <p className="max-w-[750px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] auto-rows-min">
                     {education.items.map((item, index) => (
@@ -146,7 +154,7 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                <p className="max-w-[750px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[20px] auto-rows-min">
                   {skills.skillList.map((skill, index) => (
                     <li key={index}>
@@ -170,7 +178,7 @@ const Resume = () => {
             <TabsContent value="about" className="w-full text-center xl:text-left">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p className="max-w-[750px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => (
                     <li key={index} className="flex items-center justify-center gap-4 xl:justify-start">

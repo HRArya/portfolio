@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { Typewriter } from "react-simple-typewriter";
 
 //components
 import Social from "@/components/Social";
@@ -14,17 +17,33 @@ const Home = () => {
 
           {/* text */}
           <div className="order-2 text-center xl:text-left xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            {/* rotating title */}
+            <span className="text-xl text-white/80">
+              <Typewriter
+                words={[
+                  "Software Developer",
+                  "AWS Cloud Practitioner",
+                  "Java Backend Engineer",
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
             <h1 className="mb-6 h1">
               Hello I&apos;m <br /> <span className="text-accent">Harshit Raj Arya</span>
             </h1>
-            <p className="max-w-[560px] mb-9 text-white/90">
-              I&apos;m a passionate computer science graduate focused on building clean, user-friendly digital experiences with a growing tech skillset.
+            <p className="max-w-[660px] mb-9 text-white/90">
+              {/* I&apos;m a software developer working across Java backend, AWS cloud fundamentals, and applied AI to build scalable, real-world applications. */}
+              I&apos;m a software developerHRA with hands-on experience in Java backend development, AWS cloud fundamentals, and applied AI. I’ve worked on computer vision–based systems to solve real-world problems and enjoy building scalable, user-friendly applications while continuously improving my engineering skills.
             </p>
 
             {/* CV-btn and socials */}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
-              <a href="/assets/Resume_hra.pdf" download>
+              <a href="/assets/Harshit_Raj_Arya_Resume.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
